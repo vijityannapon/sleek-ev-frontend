@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'IBM Plex Sans', monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.mobile-only {
+  display: none;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  @media (max-width: 768px) {
+    display: block !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.desktop-only {
+  display: none;
+  @media (min-width: 768px) {
+    display: block; /* แสดง element เมื่ออยู่ในขนาด desktop */
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  background-color: #32404a;
+  color: #ffffff;
+  padding: 20px 30px 20px 40px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar h3 {
+  font-size: 30px;
+}
+
+.content {
+  padding: 20px 30px !important;
 }
