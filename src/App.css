@@ -18,13 +18,13 @@ body {
 }
 
 .desktop-animation {
-  transform: scale(1);
-  transition: transform 0.3s;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 @media (min-width: 992px) {
   .desktop-animation:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
   }
 }
 
