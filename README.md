@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# sleek-ev-frontend Installation Guide
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prerequisites
 
-## Available Scripts
+- **Node.js**: Make sure you have Node.js version `18.18.0` or higher installed on your machine. If not, download and install it from [Node.js Official Website](https://nodejs.org/).
 
-In the project directory, you can run:
+- **Git**: Ensure Git is installed. If not, download and install it from [Git Official Website](https://git-scm.com/).
 
-### `npm start`
+## Clone the Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+There are two methods to clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Using HTTPS:
 
-### `npm test`
+```bash
+git clone https://github.com/vijityannapon/sleek-ev-frontend.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Using SSH:
 
-### `npm run build`
+If you have set up your SSH keys with GitHub, you can clone using the SSH method:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone git@github.com:vijityannapon/sleek-ev-frontend.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Setup Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navigate to the project directory:
 
-### `npm run eject`
+```bash
+cd sleek-ev-frontend
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Then, In the project directory, you'll find a file named .env.example. Create a copy of this file in the same directory and rename it to .env.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cp .env.example .env
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Open the .env file with any text editor of your choice. Update the necessary configurations, especially the API endpoint or other configuration details.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For instance:
 
-## Learn More
+```bash
+REACT_APP_API_ENDPOINT=https://your-api-url-here.com/
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Install Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
 
-### Code Splitting
+### Start the Development Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To start the local development server, run:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Once started, the application should be accessible from http://localhost:3000 or a similar URL displayed in your terminal.
 
-### Making a Progressive Web App
+### Conclusion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You have successfully set up sleek-ev-frontend for local development. Happy coding!
