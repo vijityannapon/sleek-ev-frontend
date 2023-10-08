@@ -133,7 +133,7 @@ function App() {
         </Col>
 
         <Col xs={24} md={16} className="content">
-          <h1>Akekachai Vijityannapon</h1>
+          <h1 className="desktop-animation">Akekachai Vijityannapon</h1>
           <p>
             <em>Because coding is an Arts</em>
           </p>
